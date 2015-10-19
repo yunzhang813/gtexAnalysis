@@ -1,5 +1,4 @@
 ## read in GTEx gene read count data and perform preliminary analysis
-setwd("~/data/gtex")
 dat <- read.table("GTEx_Analysis_V4_RNA-seq_RNA-SeQCv1.1.8_gene_reads.gct.gz",
                   skip=2, sep="\t",header=TRUE,stringsAsFactors=FALSE)
 
@@ -29,4 +28,4 @@ ind <- which(stab$SMTSD=="Lung")
 lungdat <- dat[,ind]
 lungtab <- stab[ind,]
 
-save(gtab, lungdat, lungtab, file="~/Dropbox/projects/gtex/gtex-gene-counts-lung.rda")
+save(gtab, lungdat, lungtab, file="gtex-gene-counts-lung.rda")

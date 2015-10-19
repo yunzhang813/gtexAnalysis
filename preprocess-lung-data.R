@@ -1,5 +1,4 @@
 ## preprocess and organize GTEx lung data 
-setwd("~/Dropbox/projects/gtex/")
 load(file="gtex-gene-counts-lung.rda")
 
 ## filter genes with low counts
